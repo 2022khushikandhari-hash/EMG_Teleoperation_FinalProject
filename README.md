@@ -20,9 +20,9 @@ Yt link :https://youtu.be/hXBAcoLtE1I?si=5lQOlRrPdAa18sjS
 
 ## Guide Details
 
-**Project Guide: Jayshree Ramakrishnan**  
-**Department:** Automation and Robotics  
-**Institute:** VESIT, Mumbai  
+Project Guide: Jayshree Ramakrishnan
+Department:Automation and Robotics  
+Institute:VESIT, Mumbai  
 
 ---
 
@@ -156,16 +156,15 @@ In short: muscle signal → cleaned and featurized → calibrated for the indivi
 ---
 
 ## Hardware Requirements
-
-|Sr.No.| Component                | Specification                               | Quantity | Purpose                                      |
-|------|--------------------------|---------------------------------------------|----------|----------------------------------------------|
-| 1.| STM32F411 ("Black Pill")    | STM32F4 series, ARM Cortex-M4F, 100MHz, FPU | 1        | On-chip ML inference microcontroller         |
-| 2 | ExG Pill.                   | 3.3V single-channel EMG amplifier           | 2        | Bicep and tricep muscle signal acquisition   |
-| 3 | BNO055 IMU                  | 9-axis absolute orientation sensor, I2C     | 1        | Wrist roll/pitch/yaw sensing                 |
-| 4 | AD8232                      | ECG/EMG front-end amplifier                 | 1        | Bicep EMG acquisition (current baseline)     |
-| 5 | Arduino Uno/Nano            | ATmega328P, USB serial                      | 1        | Signal acquisition (current baseline pipeline)|
-| 6 | HC-05 Bluetooth Module      | Class 2, UART, up to 115200 baud            | 1        | Wireless gesture transmission (planned)      |
-| 7 | Robotic Arm                 | Servo-driven                                | 1        | Teleoperation output (planned integration)   |
+|Sr.No.| Component                       | Specification                               | Quantity | Purpose                                        |
+|------|---------------------------------|---------------------------------------------|----------|------------------------------------------------|
+| 1    | STM32 Blue Pill                 | STM32F103C8T6, ARM Cortex-M3                | 1        | Microcontroller for sensor data acquisition    |
+| 2    | ST-Link Programmer              | ST-Link V2, SWD interface                   | 1        | Programming and debugging the STM32            |
+| 3    | ExG Pill                        | Surface EMG sensors for biceps and triceps  | 2        | Muscle activity signal acquisition             |
+| 4    | MPU6050 IMU                     | 6-axis accelerometer and gyroscope, I2C     | 1        | Wrist orientation and motion data acquisition  |
+| 5    | USB-to-TTL Serial Adapter       | 3.3 V logic UART interface                  | 1        | Transferring sensor data to the laptop         |
+| 6    | Laptop                          | Windows PC with Python support              | 1        | Data logging, CSV generation, and ML analysis  |
+| 7    | Robotic Arm                     | Servo-driven robotic arm                    | 1        | Executing classified gesture commands          |
 
 ---
 
@@ -442,7 +441,7 @@ Video Link:
 | ------------------------- | --------------------------------------------------------- |
 | Paper Title               |                                                           |
 | Conference / Journal Name |                                                           |
-| Paper Status              | Not Started / Drafting / Submitted / Accepted / Published |
+| Paper Status              |  Drafting 
 | Submission Date           |                                                           |
 | Paper Link                |                                                           |
 
